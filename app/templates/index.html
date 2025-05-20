@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>MatPred</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+<header>
+    <h1>CompopreD</h1>
+</header>
+<form action="{{ url_for('predict') }}" method="post">
+    <div class="wrapper">
+    <div class = "element">
+        <p>Плотность, кг/м3</p>
+        <input type="text" name="1" placeholder="Введите значение" required="required" /><br>
+    </div>
+    <div class="element">
+        <p>Модуль упругости, ГПа</p>
+        <input type="text" name="2" placeholder="Введите значение" required="required" /><br>
+    </div>
+    </div>
+    <div class="wrapper">
+    <div class="element">
+    <p>Количество отвердителя, м.%</p>
+    <input type="text" name="3" placeholder="Введите значение" required="required" /><br>
+    </div>
+    <div class="element">
+    <p>Содержание эпоксидных групп, %_2</p>
+    <input type="text" name="4" placeholder="Введите значение" required="required" /><br>
+    </div>
+    </div>
+    <div class="wrapper">
+    <div class="element">
+    <p>Температура вспышки, C_2</p>
+    <input type="text" name="5" placeholder="Введите значение" required="required" /><br>
+    </div>
+    <div class="element">
+    <p>Поверхностная плотность, г/м2</p>
+    <input type="text" name="6" placeholder="Введите значение" required="required" /><br>
+    </div>
+    </div>
+    <div class="wrapper">
+    <div class="element">
+    <p>Потребление смолы, г/м2</p>
+    <input type="text" name="7" placeholder="Введите значение" required="required" /><br>
+    </div>
+    <div class="element">
+    <p>Угол нашивки, град</p>
+    <input type="text" name="8" placeholder="Введите значение" required="required" /><br>
+    </div>
+    </div>
+    <div class="wrapper">
+    <div class="element">
+    <p>Шаг нашивки</p>
+    <input type="text" name="9" placeholder="Введите значение" required="required" /><br>
+    </div>
+    <div class="element">
+    <p>Плотность нашивки</p>
+    <input type="text" name="10" placeholder="Введите значение" required="required" /><br>
+    </div>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+</form>
+<br>
+<br>
+{% if prediction_text %}
+<div class="pred">
+    {{ prediction_text }}
+</div>
+{% endif %}
+
+</body>
+
+
+</html>
