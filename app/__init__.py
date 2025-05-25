@@ -9,6 +9,5 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestRegressor
 
 app = Flask(__name__)
-matModel = load_model('models/matmod/matmod.keras')
 pprModel = pickle.load(open("models/ppr/model_ppr.pickle", "rb"))
 from app import routes
