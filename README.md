@@ -7,18 +7,18 @@
 | Наименование | Тип переменной |
 | --- | --- |
 | `Плотность` | Признак |
-| `Модуль упругости` | Show file differences that haven't been staged |
-| `Количество отвердителя` | Show file differences that haven't been staged |
-| `Содержание эпоксидных групп` | Show file differences that haven't been staged |
-| `Температура вспышки` | Show file differences that haven't been staged |
-| `Поверхностная плотность` | Show file differences that haven't been staged |
-| `Потребление смолы` | Show file differences that haven't been staged |
-| `Угол нашивки` | Show file differences that haven't been staged |
-| `Шаг нашивки` | Show file differences that haven't been staged |
-| `Плотность нашивки` | Show file differences that haven't been staged |
-| `Соотношение матрица-наполнитель` | Show file differences that haven't been staged |
-| `Модуль упругости при растяжении` | Show file differences that haven't been staged |
-| `Прочность при растяжении` | Show file differences that haven't been staged |
+| `Модуль упругости` | Признак |
+| `Количество отвердителя` | Признак |
+| `Содержание эпоксидных групп` | Признак |
+| `Температура вспышки` | Признак |
+| `Поверхностная плотность` | Признак |
+| `Потребление смолы` | Признак |
+| `Угол нашивки` | Признак |
+| `Шаг нашивки` | Признак |
+| `Плотность нашивки` | Признак |
+| `Соотношение матрица-наполнитель` | Целевая переменная |
+| `Модуль упругости при растяжении` | Целевая переменная |
+| `Прочность при растяжении` | Целевая переменная |
 
 ## Структура проекта
 
